@@ -1,0 +1,1554 @@
+
+body{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    /*border-left: 1px solid green;
+    border-right: 1px solid green;*/
+    font-family: 'Rubik', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .container
+  {
+      margin: 0 auto;
+      max-width: 1200px;
+  }
+  /*colors*/
+  .purple{
+      color: #682e7a;
+  }
+  /*header*/
+  header.sticky{
+    background-color: black;
+    border-bottom: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); 
+    transition: 0.7s ease-in;
+    z-index: 999;
+} 
+  header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 160px;
+    transition: 0.7s ease-out;
+}
+.header-1910-hamicon{
+    display: none;
+}
+  .logo-header a{
+      cursor: pointer;
+  }
+  .header .header-content{
+      display:flex ;
+        column-gap: 48px;
+      margin: 30px;
+      align-items: center;
+      position: absolute;
+        z-index: 1;
+  }
+  .header .header-content .ul-header ul{
+      display: flex;
+      column-gap: 23px;
+      margin: 0;
+      padding: 0;
+      margin-top: 2px;
+  }
+  .header .header-content .ul-header ul li{
+      list-style: none;
+  }
+  .header .header-content .ul-header ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+        line-height: 60px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Rubik"; 
+        text-transform: uppercase;
+        transition: 0.7s ease-in;
+}
+.header .header-content .ul-header ul li a:hover{
+        transition: 0.7s ease-out;
+        color: #682e7a;
+}
+.twitter-img {
+    margin-left: 8px;
+    transition: 0.7s ease-in;
+
+}
+.twitter-img:hover{
+    transition: 0.7s ease-out;
+    transform: scale(1.15);
+}
+.header .header-content::after{
+    content: '';
+    bottom: -24px;
+    height: 1px;
+    width: 100%;
+    position:absolute;
+    background-color: #373333;
+}
+.icons-2-header img{
+    cursor: pointer;
+}
+.fb-img{
+    transition: 0.7s ease-in;
+}
+.fb-img:hover{
+    transform: scale(1.15);
+    transition: 0.7s ease-out;
+}
+  /*banner*/
+  .banner{
+      background-image: url("../images/4.png");
+      background-repeat: no-repeat;
+      min-height: 970px;
+      position: relative;
+  }
+  .banner .banner-content {
+    position: absolute;
+    bottom: 0px;
+    top: 545px;
+}
+.banner .banner-content .content-banner-header h1{
+    font-size: 80px;
+    letter-spacing: -2px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-family: "Rubik";
+    margin-left: -7px;
+    word-spacing: 4.5px;
+}
+.banner .banner-content .content-banner-header p{
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Rubik";
+    margin: 0;
+    text-transform: uppercase;
+    word-spacing: 3.5px;
+}
+.banner .banner-content .content-banner-header .btns-div-banner{
+    display: flex;
+    padding-top: 30px;
+    column-gap: 10px;
+}
+.banner .banner-content .content-banner-header .btns-div-banner a{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Rubik";
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 0px;
+}
+.banner .banner-content .content-banner-header .btns-div-banner .btn1-header a {
+    padding: 19px 20px 19px 21px;
+    background-color: #682e7a;
+    border-radius: 4px;
+    transition: 0.7s ease-in;
+}
+.banner .banner-content .content-banner-header .btns-div-banner .btn1-header a:hover{
+    transition: 0.7s ease-out;
+    background-color: #eeeff8;
+    color: #682e7a;
+}
+.banner .banner-content .content-banner-header .btns-div-banner .btn2-header a {
+    padding: 16px 55px 16px 55px;
+    border: 3px solid;
+    border-radius: 4px;
+    transition: 0.7s ease-in;
+}
+.banner .banner-content .content-banner-header .btns-div-banner .btn2-header a:hover{
+    transition: 0.7s ease-in;
+    color: #682e7a;
+    background-color: #eeeff8;
+}
+/*mobile app*/
+.mobile-app .div-gray-white-bg{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f3f9;
+}
+.mobile-app .div-gray-white-bg .grey-div{
+    background-color: #272727;
+    min-height: 756px;
+    width: 49.9%;
+    position: relative;
+    z-index: 1;
+}
+.mobile-app .div-gray-white-bg .grey-div img{
+    position: absolute;
+    left: 37.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lightpurple-div{
+    background-color: #f8f3f9;
+    width: 50%;
+}
+ .lightpurple-div .mobile-app-content{
+    max-width: 385px;
+    padding-left: 160px;
+    box-sizing: content-box;
+    margin-top: -55px;
+}
+.lightpurple-div .mobile-app-content h2 ,
+ .services-lightpurple .services-lightpurple-content h2 /*services*/ {
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #272727;
+    font-weight: 300;
+    font-family: "Rubik";
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.lightpurple-div .mobile-app-content h2 span ,
+.services-lightpurple .services-lightpurple-content h2 span /*services*/ {
+    font-weight: 500;
+}
+ .lightpurple-div .mobile-app-content h4{
+    font-size: 20.2px;
+    letter-spacing: -0.5px;
+    line-height: 60px;
+    color: #682e7a;
+    font-weight: 700;
+    font-family: "Rubik";
+    text-transform: uppercase;
+    margin: 4px 3px;
+}
+ .lightpurple-div .mobile-app-content p , 
+ .services-lightpurple .services-lightpurple-content p /*services*/{
+
+    font-size: 18.2px;
+    letter-spacing:-1px;
+    line-height: 28px;
+    color: #272727;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 8px;
+    word-spacing: 1px;
+    font-family: "Rubik";
+}
+span.purple.space {
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.lightpurple-div .mobile-app-content .div-ul-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 319px;
+    padding-top: 15px;
+    padding-left: 6px;
+}
+ .lightpurple-div .mobile-app-content .div-ul-links ul li{
+    list-style: none;
+}
+.lightpurple-div .mobile-app-content .div-ul-links h3 , .div-ul-links h5{
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 22px;
+    color: #272727;
+    font-weight: 400;
+    font-family: "Rubik";
+    margin: 0;
+}
+.div-ul-links h3{
+    padding-top: 13px;
+}
+.div-ul-links h5{
+    font-weight: 500;
+}
+/*services*/
+.services-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f3f9;
+}
+.services-lightpurple{
+    background: #f8f3f9;
+    width: 50%;
+}
+.services .services-bg .services-lightpurple .services-lightpurple-content{
+    max-width: 432px;
+    float: right;
+    margin-right: 165px;
+}
+.services-lightpurple-content h2{
+    margin-top: -12px;
+    padding-bottom: 22px;
+    margin-left: -2px;
+}
+.services .services-bg .services-lightpurple .services-lightpurple-content .div-btn-service a{
+    text-decoration: none;
+    color: white;
+    background-color: #682e7a;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Rubik";
+    padding: 18px 31px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.7s ease-in;
+}
+.services .services-bg .services-lightpurple .services-lightpurple-content .div-btn-service a:hover{
+    transition: 0.7s ease-out;
+    color: #ba52da;
+    background-color: #525252;
+}
+.services-lightpurple-content p{
+    margin-left: 0 !important;
+}
+.div-btn-service {
+    padding-top: 13px;
+}
+/*comunnity*/
+section.comunnity {
+    padding: 120px 0;
+}
+.comunnity .div-comunnity-markets{
+    background-image: url('../images/10.png');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 437px;
+}
+.comunnity .div-comunnity-markets .comunnity-markets-content{
+    max-width: 470px;
+    float: right;
+    margin: 57px 71px 0 0;
+}
+.comunnity .div-comunnity-markets .comunnity-markets-content p{
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Rubik";
+    text-align: right;
+    margin: 0;
+}
+.comunnity .div-comunnity-markets .comunnity-markets-content h2{
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Rubik";
+    text-align: right;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.comunnity .div-comunnity-markets .comunnity-markets-content h2 span , .our-minstry h2 span /*history*/
+, .mission-n-vision .mission-vision-div h2 span /*mission and vision*/ , .sermons-archive .sermons-archive-content h2 span /*archive*/
+, .online-giving-content h2 span /*online*/
+{
+    font-weight: 500;
+}
+/*history*/
+.history .history-bg{
+    background-color: #272727;
+    min-height: 850px;
+}
+.history .history-bg .history-content-flex{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 60px 0 85px;
+}
+.img-pastors {
+    display: flex;
+    align-items: center;
+}
+.history .history-bg .history-content-flex .our-minstry h2{
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Rubik";
+}
+.history .history-bg .history-content-flex .our-minstry h3 ,
+.history .history-bg .history-content-flex .our-pastors h3{
+    font-size: 19.5px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Rubik";
+    text-transform: uppercase;
+}
+.our-minstry p {
+    margin: 0;
+}
+.history .history-bg .history-content-flex .our-minstry p , .our-pastors p {
+    max-width: 530px;
+    min-height: 126px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Rubik";
+}
+.our-pastors .div-pastors-content p {
+    max-width: 245px;
+}
+.history .history-bg .history-content-flex .our-pastors a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    font-weight: 500;
+    font-family: "Rubik";
+    padding: 18px 15px;
+    background-color: #682e7a;
+    border-radius: 6px;
+    transition: 0.7s ease-in;
+}
+.history .history-bg .history-content-flex .our-pastors a:hover{
+    transition: 0.7s ease-out;
+    color: #682e7a;
+    background-color: #eeeff8;
+}
+.history{
+    position: relative;
+}
+.history::before{
+    content: '';
+    position: absolute ;
+    min-height: 100%;
+    width: 1px;
+    background-color: #bebebe;
+    /* display: flex; */
+    /* justify-content: left; */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.our-pastors img , .our-minstry img{
+    position: relative;
+    left: -15px;
+    top: 5px;
+}
+.our-minstry h2{
+    padding-top: 8px;
+    margin-left: -4px;
+}
+.our-minstry h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.our-pastors h3{
+    position: relative;
+    top:8px;
+}
+.our-pastors img {
+    top: 23px;
+}
+.histroy-btn {
+    position: relative;
+    top: -8px;
+}
+p.p-pastors-bottom {
+    position: relative;
+    top: -8px;
+}
+/*Mission and vision*/
+.mission-n-vision .mission-vision-div h2{
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #272727;
+    font-weight: 300;
+    font-family: "Rubik";
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 105px;
+}
+.mission-n-vision .mission-vision-div .cardds-flex-m-v .card-mission{
+    background-image: url('../images/13.png');
+    background-position: inherit;
+    min-height: 539px;
+    position: relative;
+    max-width: 538px;
+    padding: 0 45px 0 41px;
+    background-repeat: no-repeat;
+    transition: 0.7s ease-in;
+    cursor: pointer;
+}
+.mission-n-vision .mission-vision-div .cardds-flex-m-v .card-mission:hover{
+    transition: 0.7s ease-out;
+    transform: scale(1.01);
+    box-shadow: 0 3px 8px 0px;
+}
+.mission-n-vision .mission-vision-div .cardds-flex-m-v .card-vision{
+    background-image: url('../images/14.png');
+    background-position: inherit;
+    min-height: 539px;
+    position: relative;
+    max-width: 538px;
+    padding: 0 24px 0 36px;
+    background-repeat: no-repeat;
+    transition: 0.7s ease-in;
+    cursor: pointer;
+}
+.mission-n-vision .mission-vision-div .cardds-flex-m-v .card-vision:hover{
+    transition: 0.7s ease-out;
+    transform: scale(1.01);
+    box-shadow: 0 3px 8px 0px;
+}
+.cardds-flex-m-v {
+    display: flex;
+    justify-content: space-between;
+}
+.card-mission h3 , .card-vision h3{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Rubik";
+    margin-bottom: -7px;
+}
+.card-mission p , .card-vision p{
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Rubik";
+}
+p.font-weight {
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+.mission-cont-2 h3{
+    margin-top: 34px;
+}
+.mission-cont-2 {
+    padding-top: px;
+    position: relative;
+    top: 4px;
+}
+.mission-cont-2 p{
+    padding-right: 30px;
+}
+.card-vision p {
+    letter-spacing: -0.4px;
+    line-height: 27.2px;
+}
+.p-37px{
+    margin-bottom: 0;
+    margin-top: 33px;
+}
+p.p-37px.a {
+    margin-top: 30px;
+}
+.mission-n-vision::before{
+    content: '';
+    position: absolute ;
+    height: 690px;
+    width: 1px;
+    background-color: #bebebe;
+    /* display: flex; */
+    /* justify-content: left; */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+.mission-n-vision::after{
+    content: '';
+    position: absolute ;
+    height: 1px;
+    width: 100%;
+    background-color: #bebebe;
+    /* display: flex; */
+    /* justify-content: left; */
+    margin: -289px auto;
+    z-index: -1;
+    max-width: 1920px;
+}
+.mission-n-vision .mission-vision-div .div-mission-vision-btn a{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Rubik";
+    text-decoration: none;
+    background-color: #682e7a;
+    padding: 20px 32px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.7s ease-in;
+}
+.mission-n-vision .mission-vision-div .div-mission-vision-btn a:hover{
+    transition: 0.7s ease-out;
+    color: #682e7a;
+    background-color: #eeeff8;
+    border: 1px solid #682e7a;
+}
+.div-mission-vision-btn {
+    text-align: center;
+    padding: 62px 0 110px;
+}
+/*sermons-archive*/
+.sermons-archive{
+    min-height: 932px;
+    background-color: #eeeff8;
+    margin-top: 10px;
+}
+.flex-3-cards {
+    display: flex;
+    column-gap: 10px;
+}
+.flex-3-cards img{
+    border-radius: 4px;
+    transition: 0.7s ease-in;
+    cursor: pointer;
+}
+.flex-3-cards img:hover{
+    transition: 0.7s ease-out;
+    transform: scale(1.02);
+}
+.sermons-archive .sermons-archive-content h2{
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #272727;
+    font-weight: 300;
+    font-family: "Rubik";
+    text-align: center;
+    margin: 0;
+    padding: 108px 0 0px;
+}
+.sermons-archive .sermons-archive-content h3{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #682e7a;
+    font-family: "Rubik";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 17px;
+}
+.sermons-archive .sermons-archive-content .card-1-archive h4{
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #682e7a;
+    font-family: "Rubik";
+    text-transform: uppercase;
+    margin-top: 28px;
+}
+.sermons-archive .sermons-archive-content .card-1-archive h5{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    color: #272727;
+    font-weight: 400;
+    font-family: "Rubik";
+    margin-top: 28px;
+    margin-bottom: 0;
+}
+.sermons-archive .sermons-archive-content .card-1-archive h6{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    color: #272727;
+    font-weight: 400;
+    font-family: "Rubik";
+    margin-top: 17px;
+    margin-bottom: 28px;
+}
+.sermons-archive .sermons-archive-content .card-1-archive p{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #682e7a;
+    font-weight: 700;
+    font-family: "Rubik";
+}
+.sermons-archive .sermons-archive-content .card-1-archive .btncard-archive a{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #682e7a;
+    font-weight: 600;
+    font-family: "Rubik";
+    border: 2.5px solid black;
+    padding: 19px 35px 16px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: 0.7s ease-in;
+    cursor: pointer;
+}
+.sermons-archive .sermons-archive-content .card-1-archive .btncard-archive a:hover{
+    transition: 0.7s ease-out;
+    background-color: #682e7a;
+    color: #eeeff8;
+}
+ .sermons-archive .sermons-archive-content .card-1-archive h6 span{
+     font-weight: 800;
+ }
+ .btncard-archive {
+    margin-top: 33px;
+}
+/*online-giving*/
+.online-giving{
+    background-image: url('../images/18.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 524px;
+    position: relative;
+
+}
+.online-giving .online-giving-content h2{
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #272727;
+    font-weight: 300;
+    font-family: "Rubik";
+    margin-top: -23px;
+}
+.online-giving .online-giving-content h3{
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 25px;
+    font-weight: 700;
+    font-family: "Rubik";
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.online-giving .online-giving-content .btn-online-giving a{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Rubik";
+    padding: 19px 36px;
+    background-color: #682e7a;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.7s ease-in;
+}
+.online-giving .online-giving-content .btn-online-giving a:hover{
+    transition: 0.7s ease-out;
+    color: #ba52da;
+    background-color: #525252;
+}
+.online-giving-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-online-giving {
+    /* margin-top: 39px; */
+    position: relative;
+    top: 15px;
+}
+/*bottom*/
+.bottom{
+    background-color: #272727 ;
+    min-height: 665px;
+}
+.bottom .bottom-content{
+    display: flex;
+    padding-top: 121px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+ .div1-btm p{
+    max-width: 262px;
+    height: 195px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Rubik";
+    margin-top: 50px;
+}
+.bottom-content h2 , .bottom-content-1200 h2{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Rubik";
+}
+ .bottom-content .div-2 ul , .bottom-content .div-3{
+    margin: 0;
+    padding: 0;
+}
+.bottom-content .div-2 ul li , .bottom-content .div-3 ul li , .bottom-content-1200 ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bottom .bottom-content .div-2 ul li a , .bottom .bottom-content .div-3 ul li a , .bottom-content-1200 ul li a{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Rubik";
+    text-transform: uppercase;
+    transition: 0.7s ease-in;
+    cursor: pointer;
+}
+.bottom .bottom-content .div-2 ul li a:hover , .bottom .bottom-content .div-3 ul li a:hover{
+    transition: 0.7s ease-out;
+    color: #682e7a;
+}
+.bottom .bottom-content .div-2 ul {
+    margin-top: 33px;
+}
+.bottom .bottom-content .div-3 ul {
+    /* margin-top: 33px; */
+    position: relative;
+    top: 75px;
+    left: -8px;
+}
+.form{
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+.div-4email{
+    min-width: 290px;
+}
+.icons-btm {
+    padding-top: 36px;
+}
+.icons-btm img{
+    cursor: pointer;
+}
+form {
+    margin-top: 47px;
+    position: relative;
+}
+input{
+    font-size: 15px;
+    color: white;
+}
+::placeholder{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: #686868;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+form::after{
+    content: '';
+    background: url('../images/20.png');
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    transition: 0.7s ease-in;
+}
+form:hover::after{
+    transform: scale(1.10);
+    transition: 0.7s ease-out;
+}
+.div-2 {
+    position: relative;
+    left: 20px;
+}
+.btm-lines{
+    position: relative;
+    top: 103px;
+}
+.btm-lines::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #525252;
+
+}
+.btm-lines-content {
+    display: flex;
+    justify-content: space-between;
+}
+.btm-lines-content h3{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: #7b7b7b;
+    font-weight: 400;
+    font-family: "Rubik";
+    margin-bottom: 0;
+}
+.btm-lines-content h3 span{
+    color: white;
+}
+.services-section-1600 {
+    display: none;
+}
+.btm-content-1200 {
+    display: none;
+}
+.mobile-app-section-1200 {
+    display: none;
+}
+/*responsive*/
+@media screen and ( max-width:1910px ){
+    /*header*/
+    .header-1910-hamicon{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-1910-hamicon.active{
+        background: black;
+    }
+    .header-1910-hamicon .icon-ham .hamburger-icon{
+        max-width: 39px;
+        min-height: 3px;
+        background-color: white;
+        margin: 9.5px 0;
+        transition: 0.7s ease-out;
+        width: 100%;
+    }
+    .icon-ham{
+        width: 75px;
+    }
+    
+    .toggle-cont{
+        display: none;
+    }
+    .toggle-cont.active{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        height: 100vh;
+        background-color: black;
+        justify-content: space-around;
+    }
+    .toggle-cont ul li{
+        list-style: none;
+        display: block;
+    }
+    .toggle-cont ul li a {
+        color: #ffffff;
+        font-size: 30px;
+        text-decoration: none;
+        line-height: 80px;
+        transition: 0.7s ease-in;
+        text-transform: uppercase;
+    }
+    .toggle-cont ul li a:hover{
+        color: #682e7a;
+        transition: 0.7s ease-out;
+    }
+    .mobile-app .div-gray-white-bg .lightpurple-div {
+        width: auto;
+        position: relative;
+        right: 7%;
+    }
+    .services .services-bg .services-lightpurple .services-lightpurple-content {
+        margin: 0;
+        position: relative;
+        right: 14%;
+      } 
+    /*display none content*/
+    .ul-header {
+        display: none;
+    }
+    .header .header-content::after {
+        display: none;
+    }
+    .header .header-content {
+        display: none;
+    }
+}
+@media screen and ( max-width:1600px ){
+    .services-section-1600 {
+        display: block;
+    }
+    .banner .banner-content {
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+    }
+    .mobile-app .div-gray-white-bg .grey-div img {
+        left: 0;
+    }
+    /*services-new-section*/
+    .services-section-1600-bg{
+        background-image: url(../images/9.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 755px;
+        position: relative;
+        background-blend-mode: overlay;
+        background-color: lightslategray;
+        margin: 100px 0;
+    }
+    .services-section-1600-bg   .services-lightpurple .services-lightpurple-content{
+        max-width: 100%;
+        float: right;
+        margin-right: 0;
+        margin: 50px;
+
+    }
+   .services-section-1600-bg  .services-lightpurple-content h2{
+        margin-top: -12px;
+        padding-bottom: 22px;
+        margin-left: -2px;
+    }
+    .services-section-1600-bg .services-lightpurple .services-lightpurple-content .div-btn-service a{
+        text-decoration: none;
+        color: white;
+        background-color: #682e7a;
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 60px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Rubik";
+        padding: 18px 31px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        transition: 0.7s ease-in;
+    }
+    .services-section-1600-bg .services-lightpurple .services-lightpurple-content .div-btn-service a:hover{
+        transition: 0.7s ease-out;
+        color: #ba52da;
+        background-color: #525252;
+    }
+    .services-lightpurple .services-lightpurple-content h2 /*services*/ {
+        font-size: 50px;
+        letter-spacing: -1px;
+        line-height: 60px;
+        color: #272727;
+        font-weight: 300;
+        font-family: "Rubik";
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+    .services-lightpurple .services-lightpurple-content p /*services*/{
+
+        font-size: 18.2px;
+        letter-spacing:-1px;
+        line-height: 28px;
+        color: #272727;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-top: 8px;
+        word-spacing: 1px;
+        font-family: "Rubik";
+    }
+    .services-lightpurple {
+        background: #f8f3f9;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      /*ministers section*/
+      .history .history-bg .history-content-flex {
+        display:block ;
+        padding: 60px 0 0;
+      }
+      .our-minstry , .our-pastors {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        padding: 50px 0;
+      }
+      .our-pastors::before{
+          content: '';
+          width: 100%;
+          height: 1px;
+          background-color: #f8f3f9;
+          position:absolute;
+          top: -18px;
+      }
+      .history .history-bg .history-content-flex .our-minstry p, .our-pastors p {
+        max-width: 100%;
+        margin: 0 30px;
+      }
+      .img-pastors {
+        padding-bottom: 50px;
+      }
+      .our-pastors .div-pastors-content p {
+        max-width: 400px;
+      }
+      .online-giving-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        max-width: 1200px;
+    }
+    /*display none*/
+    .services-bg{
+        display: none;
+    }
+    .history::before {
+        display: none;
+      }
+}
+@media screen and ( max-width:1270px ){
+    /*headings*/
+    .content-banner-header h1 ,  .mobile-app-content h2, 
+    .services-lightpurple-content h2 ,  .our-minstry h2 ,
+     .mission-vision-div h2 , .online-giving-content h2 {
+         font-size: 60px !important;
+     }
+  
+     .content-banner-header p , .online-giving-content h3 , .our-pastors h3{
+         font-size: 22px!important;
+     }
+     .btm-content-1200 {
+        display: block;
+    }
+    .mobile-app-section-1200 {
+        display: block;
+    }
+     .flex-3-cards {
+        display: flex;
+        column-gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+     .card-1-archive {
+        /* width: 100%; */
+        text-align: center;
+        padding: 30px;
+    }
+     .services-section-1600-bg{
+         margin: 0;
+     }
+     .mobile-app-section-1200-bg{
+         background-image: url(../images/5.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         min-height: 515px;
+         position: relative;
+         background-blend-mode: overlay;
+         background-color: lightslategray;
+     }
+     .lightpurple-div {
+        background-color: #f8f3f9;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .lightpurple-div .mobile-app-content {
+        max-width: 100%;
+        padding: 0;
+        margin: 50px;
+    }
+    .mission-n-vision .mission-vision-div h2 {
+        padding-top: 20px;
+    }
+    section.comunnity {
+        padding:  0;
+    }
+    .mission-n-vision .mission-vision-div .cardds-flex-m-v .card-mission{
+        max-width: 100%;
+        padding: 0; 
+        background-repeat: inherit;
+        transition: 0.7s ease-in;
+        cursor: pointer;
+        width: 100%;
+        margin: 0;
+    }
+    .cardds-flex-m-v {
+        display: block;
+    }
+    .card-mission-content , .card-vision-content{
+        margin: 50px;
+        position: absolute;
+    }
+    .mission-n-vision .mission-vision-div .cardds-flex-m-v .card-vision {
+        background-image: url(../images/14.png);
+        background-position: inherit;
+        min-height: 539px;
+        position: relative;
+        max-width: 100%;
+        padding: 0 ;
+        background-repeat: inherit;
+        transition: 0.7s ease-in;
+        cursor: pointer;
+        background-blend-mode: overlay;
+        background-color: dimgray;
+    }
+    .div-mission-vision-btn {
+        text-align: center;
+        padding: 15px;
+    }
+    .div-4email {
+        max-width:350px ;
+    }
+    .flex-1 {
+        display: flex;
+        align-items: end;
+        justify-content: space-around;
+    }
+    .flex-2 ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .flex-2 .div-2 h2{
+        text-align: center;
+    }
+    .div-2 {
+        left: 0px;
+    }
+    header {
+        min-height: 110px;
+    }
+     /*display none*/
+     br{
+        display: none;
+    }
+    .mobile-app .div-gray-white-bg{
+        display: none;
+    }
+    .mission-n-vision::before , .mission-n-vision::after {
+        display: none;
+    }
+    .bottom .bottom-content {
+        display: none;
+    }
+}
+@media screen and ( max-width:800px ){
+    .content-banner-header h1, .mobile-app-content h2,
+     .services-lightpurple-content h2, .our-minstry h2, 
+     .mission-vision-div h2, .online-giving-content h2 {
+        font-size: 40px !important;
+    }
+    .card-mission p, .card-vision p {
+        line-height: 24px;
+    }
+    .div1-btm p {
+        max-width: fit-content;
+        height: auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .div-btn-service {
+        padding-top: 13px;
+        text-align: center;
+    }
+    .card-vision p {
+        letter-spacing: -0.4px;
+        line-height: 22px;
+    }
+    .img-pastors {
+        display: block;
+        align-items: center;
+    }
+    .toggle-cont ul li a {
+        font-size: 17px;
+    }
+    .banner .banner-content .content-banner-header .btns-div-banner {
+        display: flex;
+        padding-top: 30px;
+        column-gap: 10px;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .our-minstry{
+        padding: 0;
+    }
+    .our-minstry img {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 80%;
+    }
+    .history .history-bg .history-content-flex {
+        display:block ;
+        padding: 0 0;
+      }
+      .lightpurple-div .mobile-app-content {
+        margin: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-section-1600-bg .services-lightpurple .services-lightpurple-content {
+        max-width: 100%;
+        float: right;
+        margin-right: 0;
+        margin: 20px;
+    }
+    .comunnity .div-comunnity-markets .comunnity-markets-content p {
+        font-size: 22px;
+    }
+    .comunnity .div-comunnity-markets {
+        background-blend-mode: overlay;
+        background-color: lightslategrey;
+
+    }
+    .lightpurple-div .mobile-app-content h2, .services-lightpurple .services-lightpurple-content h2 {
+        margin: 0;
+    }
+    .div-ul-links {
+        width: 100%;
+    }
+    .lightpurple-div .mobile-app-content .div-ul-links ul {
+        max-width: 100%;
+    }
+    .our-pastors::before {
+        top: 18px;
+    }
+    .services-section-1600-bg {
+        border-bottom: 5px solid;
+        border-top: 5px solid;
+    }
+    .content-banner-header {
+        margin: 0 10px;
+    }
+    .card-mission-content, .card-vision-content {
+        margin: 0 50px;
+        position: absolute;
+    }
+    .online-giving-content br{
+        display: block;
+    }
+    .div1-btm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* justify-content: center; */
+    }
+    .flex-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .div-4email {
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-content-1200 ul li a {
+        font-size: 10px;
+    }
+    .bottom-content h2, .bottom-content-1200 h2 {
+        font-size: 14px;
+        border: 1px solid white;
+        /* max-width: 100px; */
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 40px;
+    }
+    .content-banner-header p, .online-giving-content h3, .our-pastors h3 {
+        font-size: 18px!important;
+    }
+    .btm-lines {
+        position: relative;
+        top: 0px;
+        background-color: #272727;
+        padding: 0 20px;
+        border-top: 1px solid white;
+        margin-top: 40px;
+    }
+    .btm-lines::before {
+        display: none;
+    }
+    .btm-lines-content h3 {
+        line-height: 20px;
+    }
+    
+}
+@media screen and ( max-width:500px ){
+    .header-1910-hamicon {
+        max-width: 318px;
+        width: 100%;
+    }
+    .content-banner-header h1, .mobile-app-content h2, .services-lightpurple-content h2, .our-minstry h2, .mission-vision-div h2, .online-giving-content h2 {
+        font-size: 25px !important;
+        font-weight: 500 !important;
+    }
+    .content-banner-header p, .online-giving-content h3, .our-pastors h3 {
+        font-size: 15px!important;
+    }
+    .banner .banner-content .content-banner-header .btns-div-banner .btn1-header a {
+        padding: 19px 7px 19px 7px;
+    }
+    .banner .banner-content .content-banner-header .btns-div-banner .btn2-header a {
+        padding: 16px 46px 16px 37px;
+    }
+    .lightpurple-div .mobile-app-content h4 {
+        font-size: 15px;
+    }
+    p{
+        font-size: 14px !important;
+    }
+    span.purple.space {
+        font-size: 16px;
+    }
+    .lightpurple-div .mobile-app-content .div-ul-links h3, .div-ul-links h5 {
+        font-size: 14px;
+    }
+    .services-lightpurple .services-lightpurple-content h2 {
+        line-height: 35px;
+    }
+    .services-section-1600-bg .services-lightpurple .services-lightpurple-content {
+        text-align: center;
+    }
+    .comunnity .div-comunnity-markets .comunnity-markets-content h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .banner .banner-content .content-banner-header p {
+        line-height: 30px;
+    }
+    .banner .banner-content {
+        top: 67%;
+        transform: translateY(-50%);
+    }
+    .banner {
+        min-height: 600px;
+    }
+    .comunnity .div-comunnity-markets {
+        min-height: 350px;
+    }
+    .card-mission-content, .card-vision-content {
+         margin: 20px; 
+        position: absolute;
+    }
+    .card-mission h3, .card-vision h3 {
+        margin-top:  0px;
+        line-height: 30px;
+    }
+    .flex-3-cards img {
+        width: 100%;
+    }
+    .sermons-archive .sermons-archive-content .card-1-archive h5 {
+        font-size: 30px;
+    }
+    .sermons-archive .sermons-archive-content h3 {
+        font-size: 17px;
+        letter-spacing: 0px;
+        line-height: 15px;
+    }
+    .online-giving .online-giving-content h2 {
+        line-height: 35px;
+    }
+    .online-giving {
+        min-height: 370px;
+    }
+    .card-1-archive {
+        /* width: 100%; */
+        text-align: center;
+        padding: 15px;
+    }
+    .sermons-archive .sermons-archive-content h2 {
+        padding: 0px;
+    }
+    .online-giving-content {
+        text-align: center;
+    }
+    .flex-2 ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-content-1200 ul li a {
+        font-size: 14px;
+    }
+    .bottom-content h2, .bottom-content-1200 h2 {
+        font-size: 16px;
+    }
+    .btm-lines-content {
+        display: block;
+        justify-content: space-between;
+    }
+    .btm-lines-content h3 {
+        line-height: 18px;
+        font-size: 10px;
+    }
+    .div1-btm p {
+        text-align: center;
+    }
+    .bottom {
+        padding: 35px 0;
+    }
+    .sermons-archive .sermons-archive-content .card-1-archive .btncard-archive a {
+        padding: 16px 16px 16px;
+    }
+    .icon-ham {
+        width: 37px;
+    }
+}
