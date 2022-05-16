@@ -1159,7 +1159,10 @@ form:hover::after{
      .mission-vision-div h2 , .online-giving-content h2 {
          font-size: 60px !important;
      }
-  
+     .bottom-content-1200 ul li a:hover {
+        color: #682e7a;
+        transition: 0.7s ease-out;
+    }
      .content-banner-header p , .online-giving-content h3 , .our-pastors h3{
          font-size: 22px!important;
      }
