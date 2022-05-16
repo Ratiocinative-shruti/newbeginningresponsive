@@ -1431,6 +1431,10 @@ form:hover::after{
         max-width: 480px;
         width: 100%;
     }
+    .toggle-cont.active ul {
+        margin: 0;
+        padding: 0;
+    }
     .content-banner-header h1, .mobile-app-content h2, .services-lightpurple-content h2, .our-minstry h2, .mission-vision-div h2, .online-giving-content h2 {
         font-size: 25px !important;
         font-weight: 500 !important;
