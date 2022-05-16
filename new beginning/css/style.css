@@ -1428,7 +1428,7 @@ form:hover::after{
 }
 @media screen and ( max-width:500px ){
     .header-1910-hamicon {
-        max-width: 318px;
+        max-width: 480px;
         width: 100%;
     }
     .content-banner-header h1, .mobile-app-content h2, .services-lightpurple-content h2, .our-minstry h2, .mission-vision-div h2, .online-giving-content h2 {
