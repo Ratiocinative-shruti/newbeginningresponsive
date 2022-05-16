@@ -7,6 +7,9 @@ body{
     border-right: 1px solid green;*/
     font-family: 'Rubik', sans-serif;
 }
+body.active{
+    overflow: hidden;
+}
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
