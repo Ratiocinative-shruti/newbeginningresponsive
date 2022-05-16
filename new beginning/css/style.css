@@ -1169,6 +1169,11 @@ form:hover::after{
     .mobile-app-section-1200 {
         display: block;
     }
+    .bottom-content-1200 ul li a:hover {
+        color: #682e7a;
+        transition: 0.7s ease-out;
+    }
+
      .flex-3-cards {
         display: flex;
         column-gap: 10px;
