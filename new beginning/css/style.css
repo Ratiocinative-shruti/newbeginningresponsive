@@ -671,7 +671,7 @@ p.p-37px.a {
     color: #682e7a;
     font-family: "Rubik";
     text-transform: uppercase;
-    margin-top: 28px;
+    margin-top: 25px;
 }
 .sermons-archive .sermons-archive-content .card-1-archive h5{
     font-size: 40px;
@@ -696,7 +696,7 @@ p.p-37px.a {
 .sermons-archive .sermons-archive-content .card-1-archive p{
     font-size: 18px;
     letter-spacing: 0px;
-    line-height: 28px;
+    line-height: 44px;
     color: #682e7a;
     font-weight: 700;
     font-family: "Rubik";
@@ -724,7 +724,7 @@ p.p-37px.a {
      font-weight: 800;
  }
  .btncard-archive {
-    margin-top: 33px;
+    margin-top: 24px;
 }
 /*online-giving*/
 .online-giving{
@@ -899,7 +899,11 @@ form:hover::after{
 }
 .div-2 {
     position: relative;
-    left: 20px;
+    left: 33px;
+}
+.div-3 {
+    position: relative;
+    right: 13px;
 }
 .btm-lines{
     position: relative;
@@ -925,6 +929,7 @@ form:hover::after{
     font-weight: 400;
     font-family: "Rubik";
     margin-bottom: 0;
+    margin-top: 9px;
 }
 .btm-lines-content h3 span{
     color: white;
@@ -939,7 +944,7 @@ form:hover::after{
     display: none;
 }
 /*responsive*/
-@media screen and ( max-width:1910px ){
+@media screen and ( max-width:1914px ){
     /*header*/
     .header-1910-hamicon{
         display: flex;
