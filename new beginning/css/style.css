@@ -1564,7 +1564,7 @@ form:hover::after{
         text-align: center;
     }
     .bottom {
-        padding: 35px 0;
+        padding: 35px 0 17px;
     }
     .sermons-archive .sermons-archive-content .card-1-archive .btncard-archive a {
         padding: 16px 16px 16px;
